@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".numbers">
+
+    <ImageView android:layout_height="198dp"
+        android:layout_width="257dp"
+        app:srcCompat="@drawable/n0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="44dp"
+        android:id="@+id/imageN"/>
+
+    <Spinner
+        android:id="@+id/spinnerN"
+        android:layout_width="364dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#EF0068"
+        android:entries="@array/val"
+        android:scrollbarSize="12dp"
+        android:textAlignment="center"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageN" />
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/imgbn"
+        app:layout_constraintHorizontal_bias="0.047"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+        app:layout_constraintVertical_bias="0.004"
+        app:layout_constraintEnd_toStartOf="@+id/imageN"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerN"/>
+
+    <Button
+        android:id="@+id/buttonN"
+        android:layout_width="157dp"
+        android:layout_height="69dp"
+        android:backgroundTint="#2498E7"
+        android:text="Try"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658" />
+
+
+</LinearLayout>

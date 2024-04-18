@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".letters">
+    <ImageView android:layout_height="245dp"
+        android:layout_width="303dp"
+        app:srcCompat="@drawable/a"
+        app:layout_constraintVertical_bias="0.147"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imageL"/>
+
+    <Button android:layout_height="70dp"
+        android:layout_width="159dp"
+        app:layout_constraintVertical_bias="0.754"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/buttonL"
+        app:layout_constraintHorizontal_bias="0.46"
+        android:textStyle="bold|italic"
+        android:text="try"
+        android:backgroundTint="#B81111"/>
+
+    <Spinner android:background="@drawable/red"
+        android:layout_height="75dp"
+        android:layout_width="374dp"
+        app:layout_constraintVertical_bias="0.592"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/spinnerL"
+        app:layout_constraintHorizontal_bias="0.486"
+        android:backgroundTint="#BCEFE8E8"
+        android:textAlignment="center"
+        android:scrollbarSize="15dp"
+        android:foregroundTint="@color/purple_700"
+        android:entries="@array/let"/>
+
+    <ImageButton android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        app:layout_constraintVertical_bias="0.266"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/imgbl"
+        app:layout_constraintHorizontal_bias="0.011"
+        tools:ignore="SpeakableTextPresentCheck"
+        app:layout_constraintBottom_toTopOf="@+id/imageL"/>
+
+
+</LinearLayout>

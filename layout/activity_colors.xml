@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".colors">
+    <ImageView android:layout_height="172dp"
+        android:layout_width="168dp"
+        app:srcCompat="@drawable/pink"
+        app:layout_constraintVertical_bias="0.203"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imageC"/>
+
+    <Spinner android:layout_height="85dp"
+        android:layout_width="357dp"
+        app:layout_constraintVertical_bias="0.523"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/spinnerC"
+        android:textAlignment="center"
+        android:entries="@array/color"
+        android:backgroundTint="#000000"/>
+
+    <Button android:background="@android:drawable/star_big_on"
+        android:layout_height="72dp"
+        android:layout_width="160dp"
+        app:layout_constraintVertical_bias="0.673"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/buttonC"
+        app:rippleColor="#881717"
+        android:textColor="#E4DDDD"
+        android:text="try"/>
+
+    <ImageButton android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        app:layout_constraintVertical_bias="0.023"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imgbc"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"/>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".online">
+
+    <Button
+        android:id="@+id/butonline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bgames"
+        android:onClick="openLink" />
+    <Button
+        android:id="@+id/butonline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sonsaur"
+        android:onClick="openLink" />
+    <Button
+        android:id="@+id/butonline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crazygames"
+        android:onClick="openLink" />
+    <Button
+        android:id="@+id/butonline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poki"
+        android:onClick="openLink" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/IV_games"
+        />
+
+    <ImageButton
+        android:id="@+id/imgbc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/WB_online"
+
+
+        />
+
+
+</LinearLayout>
